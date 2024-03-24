@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navitems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.navitems a{
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    transition: all 0.3s ease 0s;
+}
