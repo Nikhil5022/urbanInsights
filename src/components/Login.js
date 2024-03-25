@@ -34,7 +34,15 @@ const Login = () => {
       
       toast.success(' registered successfully');
       setTimeout(() => {
-        window.location.href = '/home';
+        if(selectedOption === 'admin'){
+          window.location.href = '/admin';
+        }
+        else if(selectedOption === 'staff'){
+          window.location.href = '/staff';
+        }
+        else{
+          window.location.href = '/home';
+        }
       }, 1000);
     } catch (error) {
       console.error('Error registering user:', error);

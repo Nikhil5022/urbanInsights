@@ -6,6 +6,7 @@ import ShortestPathState from "./context/ShortestPathState";
 import AppRoutes from "./routes/AppRoutes.js";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from "./components/Footer";
 function App() {
   return (
     <div
@@ -26,6 +27,7 @@ function App() {
             <NavBar />
             <ToastContainer />
             <AppRoutes />
+            <Footer />
           </Router>
         </ShortestPathState>
       </WayPointsState>

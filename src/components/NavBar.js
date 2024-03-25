@@ -47,7 +47,7 @@ function NavBar() {
               <a href="/login" className="nav-link">Login</a>
             </>
           )}
-          <a href="" className="nav-link">Blog</a>
+          <a href="/contactus" className="nav-link">Contact Us</a>
         </div>
         <button className="md:hidden" onClick={toggleMenu}>
           <svg

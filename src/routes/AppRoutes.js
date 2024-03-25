@@ -10,6 +10,7 @@ import Restaurants from '../components/Restaurants'
 import MyReservations from '../components/Myreservations'
 import Staffpage from '../components/Staffpage'
 import Admin from '../components/Admin'
+import Contactus from '../components/Contactus'
 
 export default function AppRoutes() {
 
@@ -76,6 +77,21 @@ export default function AppRoutes() {
         element:<Admin />,
         isPrivate:false,
         Key:"Admin"
+    },
+    {
+        path:"/contactus",
+        page:"Contactus",
+        element:<Contactus />,
+        isPrivate:false,
+        Key:"Contactus"
+    },
+    {
+        path:"*",
+        page:"Home",
+        element:<Navigate to="/home" />,
+        isPrivate:false,
+        Key:"Home"
+    
     }
  ]
 
